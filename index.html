@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>File Metadata Microservice</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script></script>
+        <style type = 'text/css'>
+            body {
+                font-family: 'Roboto', sans-serif;
+                padding-top: 50px;
+                padding-left: 20px;
+            }
+            span {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body id = 'format'>
+        <div>
+            <h1>API Basejump: File Metadata Microservice</h1>
+            <h3> User stories: </h3>
+                1) I can submit a FormData object that includes a file upload.
+                </br>
+                2) When I submit something, I will receive the file size in bytes within the JSON response
+                </br>
+                
+            <h3>Usage:</h3>
+            <p>
+                <!-- <form method="post" enctype="multipart/form-data" action="/file-upload"> -->
+                    <form action="/" enctype="multipart/form-data" method="post">
+                    <input type="file" name="uploadedfile">
+                    <!-- <input type="submit"> -->
+                    <button type="submit">Submit</button>
+                </form>
+                
+            </p>
+            <h3>Example output:</h3>
+            <p><mark>
+                {"name": "Game.txt", "size": 134}
+            </mark></p>
+        </div>
+        <span>
+			  <p> Written and coded by <a href="https://www.freecodecamp.com/codefay">CodeFay</a>
+			  </p>
+		 </span>
+    </body>
+</html>
